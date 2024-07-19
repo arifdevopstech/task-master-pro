@@ -16,17 +16,17 @@ module "vpc" {
   enable_dns_hostnames = true
 
   tags = {
-    "kubernetes.io/cluster/my-eks-cluster" = "shared"
+    "kubernetes.io/cluster/task-master-pro-cluster" = "shared"
 
   }
 
   public_subnet_tags = {
-    "kubernetes.io/cluster/my-eks-cluster" = "shared"
+    "kubernetes.io/cluster/task-master-pro-cluster" = "shared"
     "kubernetes.io/role/elb"               = "shared"
   }
 
   private_subnet_tags = {
-    "kubernetes.io/cluster/my-eks-cluster" = "shared"
+    "kubernetes.io/cluster/task-master-pro-cluster" = "shared"
     "kubernetes.io/role/internal-elb"      = "shared"
   }
 }
